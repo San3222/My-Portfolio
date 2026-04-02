@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Aryan | Software Developer & Cloud Engineer</title>
+    <meta name="description"
+        content="Portfolio of Sandeep Aryan - Software Developer specializing in Cloud Computing & DevOps">
+    <meta name="keywords" content="Software Developer, Cloud Computing, DevOps, Portfolio">
+    <meta name="author" content="Sandeep Aryan">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- ═══════════════ Header & Navigation ═══════════════ -->
+    <header id="main-header">
+        <div class="container nav">
+            <div class="logo">
+                <!-- <span class="logo-text">SA</span> -->
+                 <img src="images/logo.png" alt="Sandeep Aryan Logo" class="logo-img">
+                <span class="logo-full"><span class="gradient-text">Sandeep</span> Aryan</span>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="active"><span class="nav-label">Home</span></a></li>
+                <li><a href="#about"><span class="nav-label"> About</span></a></li>
+                <li><a href="#projects"><span class="nav-label"> Projects</span></a></li>
+                <li><a href="#skills"><span class="nav-label"> Skills</span></a></li>
+                <li><a href="#experience"><span class="nav-label"> Experience</span></a></li>
+                <!-- <li><a href="#blog"><span class="nav-label"> Blog</span></a></li> -->
+                <li><a href="#contact"><span class="nav-label"> Contact</span></a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- Hamburger Button — visible on mobile/tablet portrait -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation"
+                    aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu <i class="fa-solid fa-envelope"></i>, <i class="fa-solid fa-user"></i> , <i class="fa-solid fa-diagram-project"></i>, <i class="fa-solid fa-code"></i>,<i class="fa-solid fa-briefcase"></i>  -->
+        <div class="mobile-nav-dropdown" id="mobile-nav-dropdown">
+            <ul class="mobile-nav-links">
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <!-- <li><a href="#blog"><i class="fa-solid fa-newspaper"></i> Blog</a></li> -->
+                <li><a href="#contact"> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ═══════════════ Hero Section ═══════════════ -->
+    <section id="home" class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="greeting">Hello! I'm</div>
+                <h1>Sandeep <span class="highlight">Aryan</span></h1>
+                <div class="role">
+                    <span class="typing-text">Software Developer</span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="desc">Building scalable solutions with expertise in Cloud Computing & DevOps. Passionate about
+                    creating efficient, secure, and maintainable systems that solve real-world problems.</p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary pulse">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="assets/resume.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/yourusername" target="_blank" class="social-icon" title="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"
+                        title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/yourusername" target="_blank" class="social-icon" title="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://stackoverflow.com/users/youruserid" target="_blank" class="social-icon"
+                        title="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                    <a href="https://medium.com/@yourusername" target="_blank" class="social-icon" title="Medium"><i
+                            class="fab fa-medium-m"></i></a>
+                    <a href="mailto:your.email@example.com" class="social-icon" title="Email"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="profile-section" data-aos="fade-left" data-aos-delay="300">
+                <div class="profile-container">
+                    <div class="profile-circle">
+                        <div class="profile-inner">
+                            <img src="images/Gemini_Generated_Image_clmbn9clmbn9clmb.png" alt="Sandeep Aryan"
+                                class="profile-img">
+                            <div class="profile-glow"></div>
+                        </div>
+                        <div class="orbit">
+                            <div class="orbit-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ═══════════════ About Section ═══════════════ -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Who I Am</h2>
+                <p class="section-subtitle">A quick introduction about me and my journey</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <img src="images/jayanth-muppaneni-_ymJkgX4Vhw-unsplash.jpg" alt="Sandeep Aryan"
+                            class="about-img">
+                        <div class="about-img-border"></div>
+                        <div class="about-exp-badge">
+                            <span class="exp-years">4+</span>
+                            <span class="exp-text">Years of Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <p>Sandeep Aryan</p>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>sandeeparyan196@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <p>Available</p>
+                            </div>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scene">
+                        <div class="dot" style="width:6px;height:6px;top:18%;left:18%;"></div>
+                        <div class="dot" style="width:4px;height:4px;top:28%;left:28%;opacity:0.5;"></div>
+                        <div class="dot" style="width:7px;height:7px;top:15%;left:58%;"></div>
+                        <div class="dot" style="width:4px;height:4px;top:35%;left:70%;opacity:0.6;"></div>
+                        <div class="dot" style="width:5px;height:5px;top:22%;left:82%;opacity:0.7;"></div>
+                        <div class="dot" style="width:3px;height:3px;top:42%;left:90%;opacity:0.4;"></div>
+                        <div class="dot" style="width:5px;height:5px;top:55%;left:12%;opacity:0.5;"></div>
+
+                        <div class="card center">
+                            <h3>GROWTH</h3>
+                            <p>An explorer of systems, driven by curiosity and understanding.</p>
+                        </div>
+                        <div class="card left">
+                            <h3>FOCUS</h3>
+                            <p>Improving efficiency and consistency in every step.</p>
+                        </div>
+                        <div class="card right">
+                            <h3>CRAFT</h3>
+                            <p>Discipline and precision in building digital experiences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-heading">Building Scalable Solutions <br>with <span class="gradient-text">Modern
+                            Technologies</span></h3>
+                    <p class="about-description">Hi, I'm Sandeep Aryan—a Full Stack Developer with 5+ years of
+                        experience. I build modern web applications using React and Next.js, and develop scalable APIs
+                        with Node.js. I work with JavaScript, TypeScript, MySQL, MongoDB, and cloud platforms like AWS
+                        and Netlify.</p>
+                    <p class="about-description">I want to develop high-quality, scalable, and user-friendly
+                        applications that solve real-world problems and create meaningful impact. I also specialize in
+                        building AI-powered solutions, including AI bots, system integrations, automated Google Sheets
+                        workflows, and Google Apps Script-based applications.</p>
+                    <p class="about-description">From MVPs to enterprise solutions, I focus on writing clean code,
+                        maintaining clear communication, and delivering projects on time and within budget.</p>
+                    <p class="about-description">My development process is centered around understanding client
+                        requirements, creating detailed technical specifications, and executing solutions efficiently. I
+                        have experience working in agile environments.</p>
+                    <p class="about-description">When I'm not coding, you'll find me exploring new technologies,
+                        contributing to open-source projects, or sharing knowledge through technical writing and
+                        mentorship.</p>
+                </div>
+            </div>
+
+            <!-- Development Flow -->
+            <!-- Development Flow -->
+            <div class="development-flow">
+                <h4 class="flow-title">My<span class="gradient-text"> Development</span> Process</h4>
+                <div class="flow-track" id="flowTrack">
+
+                    <!-- ADD THIS ONE BLOCK — nothing else changes -->
+                    <svg class="wire-svg" id="wireSvg" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <line id="wBase" class="wire-base" x1="0" y1="0" x2="0" y2="0" />
+                        <line id="wGlow" class="wire-glow" x1="0" y1="0" x2="0" y2="0" />
+                        <line id="wCore" class="wire-core" x1="0" y1="0" x2="0" y2="0" />
+                    </svg>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-lightbulb"></i></div>
+                        <span class="flow-label">Idea</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-clipboard-list"></i></div>
+                        <span class="flow-label">Plan</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-robot"></i></div>
+                        <span class="flow-label">AI Help</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-code"></i></div>
+                        <span class="flow-label">Code</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-check-circle"></i></div>
+                        <span class="flow-label">Review</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-vial"></i></div>
+                        <span class="flow-label">Test</span>
+                    </div>
+                    <div class="flow-arr"></div>
+
+                    <div class="flow-node">
+                        <div class="flow-ico"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="flow-label">Learn</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Education & Skills — two column, below development flow -->
+            <div class="edu-skills-wrap">
+
+                <!-- LEFT: Education & Journey -->
+                <div class="edu-left">
+                    <h4 class="edu-journey-title">
+                        <i class="fas fa-graduation-cap"></i> Education & Journey
+                    </h4>
+                    <div class="edu-timeline">
+
+                        <div class="edu-entry">
+                            <div class="edu-date">2015 – 2019</div>
+                            <div class="edu-degree">Bachelor of Technology in Information Technology and Engineering
+                            </div>
+                            <div class="edu-university">
+                                <i class="fas fa-map-marker-alt"></i>
+                                APJ Abdul Kalam Technical University, Lucknow
+                            </div>
+                            <div class="edu-img-wrap">
+                                <img src="images/APJ2.png" alt="AKTU">
+                            </div>
+                        </div>
+
+                        <div class="edu-entry">
+                            <div class="edu-date">2013 – 2015</div>
+                            <div class="edu-degree">Higher Secondary (12th)</div>
+                            <div class="edu-university">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Shri Shankar Inter College, Azamgarh
+                            </div>
+                            <div class="edu-img-wrap">
+                                <img src="images/12th.png" alt="School">
+                            </div>
+                        </div>
+
+                        <div class="edu-entry">
+                            <div class="edu-date">20011 – 2013</div>
+                            <div class="edu-degree">Secondary School (10th) </div>
+                            <div class="edu-university">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Soni Children School, Azamgarh
+                            </div>
+                            <div class="edu-img-wrap">
+                                <img src="images/10th.png" alt="School">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: Skills & Expertise -->
+                <div class="skills-right">
+                    <h4 class="skills-journey-title">
+                        <i class="fas fa-code"></i> Skills & Expertise
+                    </h4>
+
+                    <div class="skills-grid">
+                        <div class="skill-chip"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                        <div class="skill-chip"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="skill-chip"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                        <div class="skill-chip"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="skill-chip"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="skill-chip"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+                        <div class="skill-chip"><i class="fab fa-google"></i><span>GCP</span></div>
+                        <div class="skill-chip"><i class="fab fa-aws"></i><span>AWS</span></div>
+                        <div class="skill-chip"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        <div class="skill-chip"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-chip"><i class="fas fa-robot"></i><span>Apps Script</span></div>
+                        <div class="skill-chip"><i class="fas fa-bolt"></i><span>REST APIs</span></div>
+                    </div>
+
+                    <div class="passion-card">
+                        <i class="fas fa-circle"></i>
+                        <span>
+                            I am deeply passionate about building scalable systems, automating workflows,
+                            and integrating AI-powered solutions that solve real-world problems.
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ Experience Section ═══════════════ -->
+    <section id="experience" class="experience-timeline">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+                <p class="section-subtitle">A timeline of my professional growth and achievements</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-items">
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date"><span class="date-badge">2024 - Present</span></div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="header-content">
+                                    <h3>Software Developer</h3>
+                                    <h4><span class="gradient-text">Puneet Urban Spaces</span></h4>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Developed and deployed multi-department web applications, automated business
+                                    workflows,
+                                    and built AI-powered solutions to enhance operational efficiency and
+                                    decision-making.
+                                </p>
+
+                                <div class="achievement-list">
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Built end-to-end bidding & contractor management system</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Automated workflows using Google Apps Script, reducing manual work
+                                            significantly</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Developed AI bot for sales audio transcription & insights</span>
+                                    </div>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Google Apps Script</span>
+                                    <span class="tech-tag">Looker Studio</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Power BI</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">APIs</span>
+                                    <span class="tech-tag">Express.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date"><span class="date-badge">2021 - 2022</span></div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+
+                                <div class="header-content">
+                                    <h3>Software Engineer (Backend & Automation)</h3>
+                                    <h4><span class="gradient-text">Xcriptech Pvt. Ltd</span></h4>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Developed scalable backend systems, automation workflows, and secure APIs to
+                                    streamline
+                                    business operations, data processing, and system integrations.
+                                </p>
+
+                                <div class="achievement-list">
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Built and integrated multiple automation systems across business
+                                            processes</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Designed secure REST APIs with authentication (JWT-based access
+                                            control)</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Optimized backend performance and database handling for high-volume
+                                            data</span>
+                                    </div>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">JWT Auth</span>
+                                    <span class="tech-tag">Context API</span>
+                                    <span class="tech-tag">REST APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date"><span class="date-badge">2019 - 2020</span></div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+
+                                <div class="header-content">
+                                    <h3>Junior Software Developer</h3>
+                                    <h4><span class="gradient-text">ChannelPlay Pvt. Ltd</span></h4>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Contributed to the development of web-based reward systems, including product
+                                    management,
+                                    market demand tracking, and database-driven features. Assisted in improving system
+                                    performance
+                                    and ensuring application reliability.
+                                </p>
+
+                                <div class="achievement-list">
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Developed dynamic web pages for reward-based product and demand
+                                            systems</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Handled complex database queries including joins and data
+                                            validation</span>
+                                    </div>
+                                    <div class="achievement">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Identified and fixed bugs through detailed testing and cross-page
+                                            validation</span>
+                                    </div>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Excel (Advanced Queries)</span>
+                                    <span class="tech-tag">AWS (Basics)</span>
+                                    <span class="tech-tag">Algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═════════════════════════════════════════════════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════ Projects Section ══════════════ -->
+    <!-- ═════════════════════════════════════════════════════════════════════════════════════════════════════════ -->
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I've Built</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A collection of systems, tools, and platforms I've designed and shipped</p>
+            </div>
+
+            <!-- ── TOP 3 FEATURED: Alternating Layout ── -->
+            <div class="featured-projects" id="featured-projects-container"></div>
+
+            <!-- ── OTHER NOTEWORTHY PROJECTS ── -->
+            <div class="noteworthy-header" data-aos="fade-up">
+                <h3 class="noteworthy-title">Other Noteworthy Projects</h3>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="api">APIs</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="management">Management</button>
+                </div>
+            </div>
+
+            <div class="noteworthy-wrapper">
+                <div class="noteworthy-grid" id="noteworthy-container"></div>
+                <div class="noteworthy-nav">
+                    <button class="nav-arrow" id="prev-arrow" aria-label="Previous"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="nav-arrow" id="next-arrow" aria-label="Next"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="view-more" data-aos="fade-up">
+                <a href="https://github.com/San3222" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════ Skills Section ═══════════════ -->
+    <!-- ══════════════════════════════════════════════════════════════════════════════════════════ -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Know</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+                <p class="section-subtitle">Technologies I've been working with and have extensive experience in</p>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="skills-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="skill-filter-btn active" data-filter="frontend">
+                    <i class="fas fa-code"></i> Frontend
+                </button>
+                <button class="skill-filter-btn" data-filter="backend">
+                    <i class="fas fa-server"></i> Backend
+                </button>
+                <button class="skill-filter-btn" data-filter="database">
+                    <i class="fas fa-database"></i> Database
+                </button>
+                <button class="skill-filter-btn" data-filter="tools">
+                    <i class="fas fa-cloud"></i> Cloud & Tools
+                </button>
+            </div>
+
+            <!-- Skills grid (populated by JS) -->
+            <div class="skills-grid-new" id="skills-container" data-aos="fade-up" data-aos-delay="200"></div>
+
+            <!-- Other technologies pill row -->
+            <div class="other-tech-wrap" data-aos="fade-up" data-aos-delay="300" id="other-tech-wrap">
+                <p class="other-tech-label">Other technologies I work with</p>
+                <div class="other-tech-pills" id="other-tech-pills"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ Blog Section ═══════════════ -->
+    <!-- <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Latest Articles</h2>
+                <p class="section-subtitle">Thoughts on technology, development, and cloud computing</p>
+            </div>
+            <div class="blog-posts" id="blog-container"></div>
+            <div class="view-more" data-aos="fade-up">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-newspaper"></i> Read All Articles
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ═══════════════ Contact Section ═══════════════ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities or collaborate on exciting projects</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Connect With Me</h3>
+                    <p>I'm currently available for remote opportunities in Cloud Computing & DevOps. Whether you have a
+                        project in mind or just want to chat about technology, feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4><a href="mailto:sandeep@example.com">sandeep@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4><a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Remote - Open to Global Opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com" target="_blank" class="social-link" title="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://dev.to" target="_blank" class="social-link" title="Dev.to"><i
+                                    class="fab fa-dev"></i></a>
+                            <a href="https://medium.com" target="_blank" class="social-link" title="Medium"><i
+                                    class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control"
+                                placeholder="What is this regarding?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-control"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ Footer ═══════════════ -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">SA</span>
+                    <span class="logo-full">Sandeep Aryan</span>
+                </div>
+                <p class="footer-subtitle">Building the future, one line of code at a time</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://dev.to" target="_blank" class="social-link"><i class="fab fa-dev"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to my newsletter for latest articles and projects</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <p class="footer-copyright">
+                    &copy; <span id="current-year"></span> Sandeep Aryan. All rights reserved.
+                    <span class="footer-credits">Made with <i class="fas fa-heart"></i> and code</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="data/portfolio-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
