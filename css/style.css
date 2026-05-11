@@ -2310,6 +2310,7 @@ section {
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;              /* standard property — fixes the error */
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;
