@@ -1,0 +1,136 @@
+/* ═══════════════════════════════════════════════════════════
+   MOBILE FIX — Paste this at the very END of style.css
+   Fixes the giant empty space below hero on Android/iOS
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── 1. Fix 100vh on mobile browsers (Android Chrome, Safari) ──
+   dvh (dynamic viewport height) collapses when browser UI hides.
+   Falls back to svh, then 100vh for older browsers.           */
+.hero {
+    min-height: 100vh;                /* fallback */
+    min-height: 100svh;               /* stable viewport — iOS Safari 15.4+ */
+    min-height: 100dvh;               /* dynamic — collapses with browser chrome */
+}
+
+/* ── 2. On portrait mobile, hero should be auto height, NOT full-screen ──
+   The content (profile pic + text + buttons + socials) is short.
+   Forcing min-height: 100vh creates the huge gap below it.    */
+@media (max-width: 900px) and (orientation: portrait) {
+    .hero {
+        min-height: unset !important;
+        height: auto !important;
+        padding-top: calc(var(--header-height) + 32px);
+        padding-bottom: 48px;
+    }
+
+    .hero-inner {
+        min-height: unset !important;
+        height: auto !important;
+    }
+}
+
+/* ── 3. Tighten up portrait layout so content fits cleanly ── */
+@media (max-width: 900px) and (orientation: portrait) {
+
+    /* Profile image — not too large on small phones */
+    .profile-container {
+        width: 180px !important;
+        height: 180px !important;
+    }
+
+    /* Hero text — compact but readable */
+    .hero h1 {
+        font-size: clamp(1.6rem, 7vw, 2.4rem) !important;
+        margin-bottom: 0.4rem;
+    }
+
+    .greeting {
+        font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+        margin-bottom: 0.25rem;
+    }
+
+    .role {
+        font-size: clamp(0.95rem, 3.8vw, 1.3rem);
+        margin: 0.75rem 0;
+    }
+
+    .desc {
+        font-size: clamp(0.82rem, 3.2vw, 0.95rem);
+        margin-bottom: 1.25rem;
+        line-height: 1.65;
+    }
+
+    /* Buttons — stack nicely, not too wide on small screens */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    /* Social icons — centered row */
+    .social-icons {
+        justify-content: center;
+        gap: 0.7rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    /* Gap between profile and text content */
+    .hero-inner {
+        gap: 1.25rem;
+    }
+}
+
+/* ── 4. Extra small phones (≤ 400px wide) ── */
+@media (max-width: 400px) and (orientation: portrait) {
+    .profile-container {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.4rem, 8vw, 1.8rem) !important;
+    }
+
+    .hero-buttons .btn {
+        max-width: 100%;
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ── 5. Remove the pulse animation on mobile (saves battery, smoother) ── */
+@media (max-width: 900px) {
+    .pulse {
+        animation: none;
+    }
+
+    /* Keep scroll indicator from pushing extra height */
+    .scroll-indicator {
+        position: relative;
+        bottom: unset;
+        left: unset;
+        transform: none;
+        text-align: center;
+        margin-top: 1rem;
+        animation: bounce 2s infinite;
+    }
+}
