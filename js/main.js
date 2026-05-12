@@ -535,11 +535,26 @@ function renderOtherTech() {
 // ════════════════════════════════════════════════════════════
 function setupFormSubmission() {
     if (!contactForm) return;
+
     contactForm.addEventListener('submit', async function (e) {
         e.preventDefault();
-        const data = Object.fromEntries(new FormData(this));
-        if (!data.name || !data.email || !data.subject || !data.message) { showNotification('Please fill in all fields.', 'error'); return; }
-        if (!isValidEmail(data.email)) { showNotification('Please enter a valid email address.', 'error'); return; }
+
+        const data = {
+            name:    document.getElementById('name').value.trim(),
+            email:   document.getElementById('email').value.trim(),
+            subject: document.getElementById('subject').value.trim(),
+            message: document.getElementById('message').value.trim()
+        };
+
+        // Validation
+        if (!data.name || !data.email || !data.subject || !data.message) {
+            showNotification('Please fill in all fields.', 'error');
+            return;
+        }
+        if (!isValidEmail(data.email)) {
+            showNotification('Please enter a valid email address.', 'error');
+            return;
+        }
 
         const btn = this.querySelector('button[type="submit"]');
         const orig = btn.innerHTML;
@@ -547,17 +562,56 @@ function setupFormSubmission() {
         btn.disabled = true;
 
         try {
-            await new Promise(r => setTimeout(r, 1500));
-            showNotification("Message sent successfully! I'll get back to you soon.", 'success');
-            contactForm.reset();
-        } catch {
-            showNotification('Failed to send message. Please try again.', 'error');
+            const response = await fetch('https://san-backend-9chh.onrender.com/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                showNotification("Message sent! I'll get back to you soon.", 'success');
+                contactForm.reset();
+            } else {
+                showNotification(result.message || 'Something went wrong.', 'error');
+            }
+
+        } catch (error) {
+            showNotification('Network error. Please try again.', 'error');
         } finally {
             btn.innerHTML = orig;
             btn.disabled = false;
         }
     });
 }
+
+
+// function setupFormSubmission() {
+//     if (!contactForm) return;
+//     contactForm.addEventListener('submit', async function (e) {
+//         e.preventDefault();
+//         const data = Object.fromEntries(new FormData(this));
+//         if (!data.name || !data.email || !data.subject || !data.message) { showNotification('Please fill in all fields.', 'error'); return; }
+//         if (!isValidEmail(data.email)) { showNotification('Please enter a valid email address.', 'error'); return; }
+
+//         const btn = this.querySelector('button[type="submit"]');
+//         const orig = btn.innerHTML;
+//         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+//         btn.disabled = true;
+
+//         try {
+//             await new Promise(r => setTimeout(r, 1500));
+//             showNotification("Message sent successfully! I'll get back to you soon.", 'success');
+//             contactForm.reset();
+//         } catch {
+//             showNotification('Failed to send message. Please try again.', 'error');
+//         } finally {
+//             btn.innerHTML = orig;
+//             btn.disabled = false;
+//         }
+//     });
+// }
 
 // ════════════════════════════════════════════════════════════
 // Newsletter
