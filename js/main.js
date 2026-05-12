@@ -562,7 +562,7 @@ function setupFormSubmission() {
         btn.disabled = true;
 
         try {
-            const response = await fetch('https://san-backend-1-3kr7.onrender.com/api/contact', {
+            const response = await fetch('https://san-backend-7vk9.onrender.com/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
