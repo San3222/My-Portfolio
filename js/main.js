@@ -540,8 +540,8 @@ function setupFormSubmission() {
         e.preventDefault();
 
         const data = {
-            name:    document.getElementById('name').value.trim(),
-            email:   document.getElementById('email').value.trim(),
+            name: document.getElementById('name').value.trim(),
+            email: document.getElementById('email').value.trim(),
             subject: document.getElementById('subject').value.trim(),
             message: document.getElementById('message').value.trim()
         };
@@ -568,7 +568,9 @@ function setupFormSubmission() {
                 body: JSON.stringify(data)
             });
 
+            console.log('Response status:', response.status); // ← add karo
             const result = await response.json();
+            console.log('Result:', result); // ← add karo
 
             if (result.success) {
                 showNotification("Message sent! I'll get back to you soon.", 'success');
