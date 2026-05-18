@@ -759,10 +759,19 @@ setupWireLight();
 
 // Mobile CV Download Fix
 document.getElementById('cv-download-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    const pdfUrl = 'https://san3222.github.io/My-Portfolio/images/Sandeepcvs2026.pdf';
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
     if (isMobile) {
-        e.preventDefault();
-        window.open('https://san3222.github.io/My-Portfolio/images/Sandeepcvs2026.pdf', '_blank');
+        // Mobile pe new tab mein open karo
+        window.open(pdfUrl, '_blank');
+    } else {
+        // Desktop pe normal download
+        const a = document.createElement('a');
+        a.href = pdfUrl;
+        a.download = 'Sandeep_Aryan_CV.pdf';
+        a.click();
     }
 });
 
