@@ -1813,13 +1813,16 @@ section {
 /* Real project image */
 .fv-img {
     position: absolute;
-    inset: 10px 0; /* 👈 top-bottom space */
+    inset: 10px 0;
+    /* 👈 top-bottom space */
     width: 100%;
-    height: calc(100% - 20px); /* 👈 full height minus spacing */
+    height: calc(100% - 20px);
+    /* 👈 full height minus spacing */
     object-fit: cover;
     object-position: top;
     display: block;
-    border-radius: 16px; /* optional but looks premium */
+    border-radius: 16px;
+    /* optional but looks premium */
     transition: filter 0.4s ease, transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
     z-index: 1;
 }
@@ -2310,7 +2313,8 @@ section {
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3;              /* standard property — fixes the error */
+    line-clamp: 3;
+    /* standard property — fixes the error */
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;
@@ -3821,6 +3825,22 @@ footer {
         padding: 10px 12px;
         border-radius: 12px;
     }
+}
+
+/* Disable text selection globally */
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Contact form inputs mein selection allow karo */
+input,
+textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
 }
 
 /* ── Tablet Landscape (768–1024px) ── */

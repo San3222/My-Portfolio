@@ -755,3 +755,48 @@ function setupWireLight() {
 }
 
 setupWireLight();
+
+
+// Mobile CV Download Fix
+document.getElementById('cv-download-btn').addEventListener('click', function (e) {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        e.preventDefault();
+        // Mobile pe new tab mein open karo — browser khud download karega
+        window.open(this.href, '_blank');
+    }
+});
+
+
+
+// ── Disable Right-Click & DevTools ──────────────────────────
+(function () {
+    // Right-click disable
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        return false;
+    });
+
+    // Keyboard shortcuts disable: F12, Ctrl+Shift+I/J/C/U, Ctrl+U
+    document.addEventListener('keydown', function (e) {
+        if (
+            e.key === 'F12' ||
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C', 'K'].includes(e.key.toUpperCase())) ||
+            (e.ctrlKey && e.key.toUpperCase() === 'U') ||
+            (e.ctrlKey && e.key.toUpperCase() === 'S')  // Ctrl+S (Save page) bhi
+        ) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    // Text selection disable (copy-paste rokne ke liye)
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    // Drag disable
+    document.addEventListener('dragstart', function (e) {
+        e.preventDefault();
+    });
+})();
