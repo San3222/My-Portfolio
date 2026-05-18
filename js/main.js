@@ -762,8 +762,7 @@ document.getElementById('cv-download-btn').addEventListener('click', function (e
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
         e.preventDefault();
-        // Mobile pe new tab mein open karo — browser khud download karega
-        window.open(this.href, '_blank');
+        window.open('https://san3222.github.io/My-Portfolio/images/Sandeepcvs2026.pdf', '_blank');
     }
 });
 
